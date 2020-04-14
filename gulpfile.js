@@ -6,13 +6,6 @@ const terser = require("gulp-terser");
 const gif = require("gulp-if");
 const gobf = require("gulp-javascript-obfuscator");
 const debug = require("gulp-debug");
-//const pkg = require("./package.json");
-/*
- *if (pkg.installConfig && pkg.installConfig.pnp) {
- *  const pnp = require("./.pnp.js");
- *  pnp.setup();
- *}
- */
 const path = ["src/**/*.js"];
 function js() {
   return src(path, {base: "src"})
