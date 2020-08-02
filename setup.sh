@@ -2,9 +2,8 @@
 #yarn 
 touch yarn.lock 
 yarn set version berry
-unset YARN_WRAP_OUTPUT 
 yarn
-yarn pnpify --sdk vim
+yarn dlx @yarnpkg/pnpify --sdk vim
 yarn plugin import version
 yarn plugin import interactive-tools
 yarn config set packageExtensions --json '{"gulp-javascript-obfuscator@*": {"dependencies": {"vinyl-sourcemaps-apply":"*"}}}' \
